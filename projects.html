@@ -40,27 +40,13 @@
       </div>
 
       <div class="card pad">
-        <h2 class="h2">Déposer un dossier</h2>
-        <div class="muted" style="margin-bottom:.9rem;">
-          Sélectionne un dossier (local) pour afficher la liste des fichiers.
-        </div>
-
-        <input id="projectFolder" type="file" webkitdirectory directory multiple aria-label="Sélectionner un dossier projet">
-
-        <div id="fileList" class="notice" style="margin-top:1rem; display:none;"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0;">
-    <div class="grid cards">
-      <div class="card pad">
         <h2 class="h2">Projet 01</h2>
-        <div class="muted">À remplir</div>
+        <div class="muted">À compléter</div>
       </div>
+
       <div class="card pad">
         <h2 class="h2">Projet 02</h2>
-        <div class="muted">À remplir</div>
+        <div class="muted">À compléter</div>
       </div>
     </div>
   </section>
@@ -70,28 +56,5 @@
   © <span data-year></span> Waleed
 </footer>
 <script src="assets/js/main.js"></script>
-<script>
-(function(){
-  const input = document.getElementById('projectFolder');
-  const box = document.getElementById('fileList');
-  if(!input || !box) return;
-
-  input.addEventListener('change', () => {
-    const files = Array.from(input.files || []);
-    if(!files.length){
-      box.style.display = 'none';
-      box.textContent = '';
-      return;
-    }
-    const names = files
-      .map(f => f.webkitRelativePath || f.name)
-      .slice(0, 60);
-
-    box.style.display = 'block';
-    box.innerHTML = '<strong>Fichiers détectés :</strong><br>' + names.map(n => n.replace(/</g,'&lt;')).join('<br>')
-      + (files.length > 60 ? '<br>…' : '');
-  });
-})();
-</script>
 </body>
 </html>
