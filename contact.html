@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f0f1b">
+<meta name="description" content="Portfolio de Waleed (BTS SIO).">
+<title>Contact | Waleed</title>
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="header">
+  <div class="nav-wrap">
+    <div class="brand">Waleed</div>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Menu">☰</button>
+    <nav class="nav" data-nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="waleed.html">Waleed</a>
+      <a href="projects.html">Projets</a>
+      <a href="documents.html">Documents</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="container">
+  <section class="section">
+    <div class="grid two">
+      <div class="card pad">
+        <h2 class="h2">Contact</h2>
+        <div class="muted">
+          <div><strong>Email:</strong> <a href="mailto:NasrullaWaleed786@gmail.com">NasrullaWaleed786@gmail.com</a></div>
+          <div><strong>Téléphone:</strong> <a href="tel:0758116810">07 58 11 68 10</a></div>
+          <div><strong>Ville:</strong> 91130 Ris-Orangis</div>
+        </div>
+      </div>
+      <div class="card pad">
+        <h2 class="h2">Envoyer un message</h2>
+        <form class="form" data-mailto-form data-to="NasrullaWaleed786@gmail.com">
+          <div>
+            <label for="name">Nom</label>
+            <input id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div>
+            <label for="subject">Sujet</label>
+            <input id="subject" name="subject" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="btn primary" type="submit">Envoyer</button>
+          <div class="notice">Ouverture automatique de l’application email.</div>
+        </form>
+        <script src="forms/mailto.js"></script>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  © <span data-year></span> Waleed
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
