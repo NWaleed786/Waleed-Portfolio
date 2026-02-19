@@ -23,32 +23,75 @@
     </nav>
   </div>
 </header>
+
 <main id="main" class="container">
   <section class="section">
     <div class="grid cards">
       <div class="card pad">
         <h2 class="h2">Projets</h2>
-        <div class="muted">
-          Ajoute ici tes projets avec une présentation courte, la techno utilisée et un lien GitHub.
-        </div>
-        <div class="pills">
+        <div class="muted">Sélection de réalisations.</div>
+
+        <div class="pills" aria-label="Stacks">
           <span class="pill">HTML/CSS</span>
-          <span class="pill">Réseau</span>
-          <span class="pill">PHP</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Réseaux</span>
+          <span class="pill">Maintenance</span>
         </div>
       </div>
+
       <div class="card pad">
-        <h2 class="h2">Premiers projets</h2>
-        <div class="muted">
-          Tu peux commencer par 2 ou 3 projets, même simples. Le plus important: propre et clair.
+        <h2 class="h2">Déposer un dossier</h2>
+        <div class="muted" style="margin-bottom:.9rem;">
+          Sélectionne un dossier (local) pour afficher la liste des fichiers.
         </div>
+
+        <input id="projectFolder" type="file" webkitdirectory directory multiple aria-label="Sélectionner un dossier projet">
+
+        <div id="fileList" class="notice" style="margin-top:1rem; display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="grid cards">
+      <div class="card pad">
+        <h2 class="h2">Projet 01</h2>
+        <div class="muted">À remplir</div>
+      </div>
+      <div class="card pad">
+        <h2 class="h2">Projet 02</h2>
+        <div class="muted">À remplir</div>
       </div>
     </div>
   </section>
 </main>
+
 <footer class="footer">
   © <span data-year></span> Waleed
 </footer>
 <script src="assets/js/main.js"></script>
+<script>
+(function(){
+  const input = document.getElementById('projectFolder');
+  const box = document.getElementById('fileList');
+  if(!input || !box) return;
+
+  input.addEventListener('change', () => {
+    const files = Array.from(input.files || []);
+    if(!files.length){
+      box.style.display = 'none';
+      box.textContent = '';
+      return;
+    }
+    const names = files
+      .map(f => f.webkitRelativePath || f.name)
+      .slice(0, 60);
+
+    box.style.display = 'block';
+    box.innerHTML = '<strong>Fichiers détectés :</strong><br>' + names.map(n => n.replace(/</g,'&lt;')).join('<br>')
+      + (files.length > 60 ? '<br>…' : '');
+  });
+})();
+</script>
 </body>
 </html>
