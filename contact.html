@@ -31,11 +31,9 @@
     </button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto gap-1">
-        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
         <li class="nav-item"><a class="nav-link" href="resume.html">CV</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -45,65 +43,58 @@
 <main id="main" class="container" style="padding-top:6.5rem;">
   <section class="section">
     <div class="section-title">
-      <div>
-        <h1>Contact</h1>
-        <p>Envoie-moi un message. (Sur GitHub Pages, le PHP ne marche pas: voir README.)</p>
-      </div>
+      <h1>Contact</h1>
     </div>
 
     <div class="row g-4">
       <div class="col-lg-5">
         <div class="card-glass p-4 h-100">
-          <h2 class="h5 fw-bold mb-3"><i class="bi bi-person-lines-fill me-2" aria-hidden="true"></i>Coordonnées</h2>
+          <h2 class="h6 fw-bold mb-3">Coordonnées</h2>
           <div class="kv">
             <div class="k">Ville</div><div class="v">91130 Ris-Orangis</div>
             <div class="k">Email</div><div class="v"><a href="mailto:NasrullaWaleed786@gmail.com">NasrullaWaleed786@gmail.com</a></div>
             <div class="k">Téléphone</div><div class="v"><a href="tel:0758116810">07 58 11 68 10</a></div>
           </div>
           <hr class="hr-soft">
-          <p class="text-muted mb-0">
-            Tu peux aussi m’envoyer directement un mail. Je réponds dès que possible.
-          </p>
+          <img class="img-fluid img-soft" src="assets/img/landscapes/land5.svg" alt="Paysage violet décoratif">
         </div>
       </div>
 
       <div class="col-lg-7">
         <div class="card-glass p-4">
-          <h2 class="h5 fw-bold mb-3"><i class="bi bi-envelope me-2" aria-hidden="true"></i>Formulaire</h2>
+          <h2 class="h6 fw-bold mb-3">Formulaire</h2>
 
-          <form action="forms/contact.php" method="post" class="needs-validation" novalidate aria-label="Formulaire de contact">
+          <form action="forms/contact.php" method="post" class="needs-validation" novalidate>
             <div class="row g-3">
               <div class="col-md-6">
                 <label for="name" class="form-label">Nom</label>
-                <input id="name" name="name" class="form-control" type="text" autocomplete="name" required placeholder="Votre nom">
+                <input id="name" name="name" class="form-control" type="text" autocomplete="name" required>
                 <div class="invalid-feedback">Merci d’indiquer votre nom.</div>
               </div>
 
               <div class="col-md-6">
                 <label for="email" class="form-label">Email</label>
-                <input id="email" name="email" class="form-control" type="email" autocomplete="email" required placeholder="ex: nom@email.com">
+                <input id="email" name="email" class="form-control" type="email" autocomplete="email" required>
                 <div class="invalid-feedback">Merci d’indiquer un email valide.</div>
               </div>
 
               <div class="col-12">
                 <label for="subject" class="form-label">Sujet</label>
-                <input id="subject" name="subject" class="form-control" type="text" required placeholder="Sujet du message">
+                <input id="subject" name="subject" class="form-control" type="text" required>
                 <div class="invalid-feedback">Merci d’indiquer un sujet.</div>
               </div>
 
               <div class="col-12">
                 <label for="message" class="form-label">Message</label>
-                <textarea id="message" name="message" class="form-control" rows="6" required placeholder="Votre message..."></textarea>
+                <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
                 <div class="invalid-feedback">Merci d’écrire un message.</div>
               </div>
 
               <div class="col-12 d-grid">
-                <button class="btn btn-brand btn-lg" type="submit">
-                  Envoyer <i class="bi bi-send ms-2" aria-hidden="true"></i>
-                </button>
+                <button class="btn btn-brand btn-lg" type="submit">Envoyer</button>
               </div>
 
-              <p class="text-muted small mb-0">Astuce: pour GitHub Pages, utilise Formspree ou EmailJS (instructions dans README).</p>
+              <p class="text-muted small mb-0">Note: GitHub Pages ne supporte pas PHP. Utilise Formspree/EmailJS si besoin.</p>
             </div>
           </form>
         </div>
@@ -119,10 +110,7 @@
         <div class="fw-semibold">Nasrulla Waleed</div>
         <div class="small">BTS SIO • Ris-Orangis (91130)</div>
       </div>
-      <div class="small">
-        <span>© <span data-year></span></span>
-        <span class="ms-1">Tous droits réservés.</span>
-      </div>
+      <div class="small">© <span data-year></span></div>
     </div>
   </div>
 </footer>
