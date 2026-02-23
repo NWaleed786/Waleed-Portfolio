@@ -10,6 +10,7 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Aller au contenu</a>
+
 <header class="header">
   <div class="nav-wrap">
     <div class="brand">Waleed</div>
@@ -26,36 +27,39 @@
 
 <main id="main" class="container">
   <section class="section">
-    <div class="grid cards">
-      <div class="card pad">
-        <h2 class="h2">Projets</h2>
+    <div class="card pad orbit-wrap">
 
-        <div class="pills" aria-label="Stacks">
-          <span class="pill">HTML/CSS</span>
-          <span class="pill">JavaScript</span>
-          <span class="pill">Réseaux</span>
-          <span class="pill">Maintenance</span>
+      <div class="orbit">
+
+        <div class="orbit-center" aria-hidden="true">
+          Projets
         </div>
+
+        <div class="orbit-items">
+          <a class="orbit-item" style="--angle: 0deg;" href="projets/projet-01.zip" download>
+            Gestion des salariés
+            <small>PHP / MySQL</small>
+          </a>
+
+          <a class="orbit-item" style="--angle: 120deg;" href="#" aria-disabled="true" title="Bientôt">
+            Projet 2
+          </a>
+
+          <a class="orbit-item" style="--angle: 240deg;" href="#" aria-disabled="true" title="Bientôt">
+            Projet 3
+          </a>
+        </div>
+
       </div>
 
-      <div class="card pad">
-        <h2 class="h2">Projet 01</h2>
-        <div class="muted">À compléter</div>
-      </div>
-
-      <div class="card pad">
-        <h2 class="h2">Projet 02</h2>
-        <div class="muted">À compléter</div>
-      </div>
     </div>
   </section>
 </main>
 
-
-
 <footer class="footer">
   © <span data-year></span> Waleed
 </footer>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>

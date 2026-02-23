@@ -22,6 +22,9 @@ body{
     radial-gradient(700px 500px at 95% 5%, rgba(139,92,246,.18), transparent 55%),
     linear-gradient(180deg, var(--bg), #0f0f1b);
   color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 a{ color: var(--text); text-decoration-color: rgba(196,181,253,.45); text-underline-offset: 3px; }
 a:hover{ color:#fff; text-decoration-color: rgba(255,255,255,.70); }
@@ -125,8 +128,13 @@ a:hover{ color:#fff; text-decoration-color: rgba(255,255,255,.70); }
   width:min(1120px, calc(100% - 2rem));
   margin-inline:auto;
 }
+.container{ flex: 1 0 auto; }
 .section{
   padding: 3.6rem 0;
+}
+@media (min-width: 1200px){
+  /* meilleure respiration en 1920x1080 */
+  .section{ padding: 4.2rem 0; }
 }
 .grid{
   display:grid;
@@ -207,6 +215,7 @@ a:hover{ color:#fff; text-decoration-color: rgba(255,255,255,.70); }
   padding: 2rem 0;
   color: rgba(245,243,255,.72);
   text-align:center;
+  flex: 0 0 auto;
 }
 
 .form{ display:grid; gap: .9rem; }
@@ -227,4 +236,101 @@ textarea{ min-height: 150px; resize: vertical; }
   border: 1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.03);
   color: rgba(245,243,255,.78);
+}
+
+/* ===== MENU CIRCULAIRE PROJETS ===== */
+
+.orbit-wrap {
+  display: grid;
+  place-items: center;
+}
+
+.orbit {
+  position: relative;
+  width: 100%;
+  --radius: clamp(115px, 22vw, 190px);
+  --center: clamp(120px, 18vw, 180px);
+  min-height: calc((var(--radius) * 2) + var(--center) + 40px);
+  display: grid;
+  place-items: center;
+}
+
+.orbit-center {
+  width: var(--center);
+  height: var(--center);
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.2);
+  background: rgba(255,255,255,.05);
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.1rem;
+  cursor: default;
+  z-index: 3;
+  transition: .3s;
+}
+
+.orbit-center:hover {
+  box-shadow: 0 0 0 6px rgba(168,85,247,.2);
+}
+
+.orbit-items {
+  position: absolute;
+  inset: 0;
+}
+
+.orbit-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:
+    translate(-50%, -50%)
+    rotate(var(--angle))
+    translate(var(--radius))
+    rotate(calc(var(--angle) * -1));
+  padding: .7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(18,18,34,.9);
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform .3s, box-shadow .2s, border-color .2s;
+}
+
+/* Trait (propre) qui relie le centre au projet */
+.orbit-item{
+  --line: calc(var(--radius) - 18px);
+}
+.orbit-item::after{
+  content:"";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--line);
+  height: 1px;
+  background: rgba(255,255,255,.18);
+  transform: rotate(calc(var(--angle) + 180deg)) translateX(18px);
+  transform-origin: left center;
+  pointer-events: none;
+}
+
+.orbit-item small{
+  display:block;
+  font-size: .8rem;
+  font-weight: 700;
+  opacity: .75;
+}
+
+.orbit-item:hover,
+.orbit-item:focus-visible{
+  border-color: rgba(168,85,247,.55);
+  box-shadow: 0 0 0 4px rgba(168,85,247,.18);
+}
+
+@media (max-width: 520px){
+  .orbit-item{
+    padding: .6rem .85rem;
+    max-width: min(260px, 78vw);
+    text-align:center;
+  }
 }
