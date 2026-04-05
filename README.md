@@ -1,23 +1,26 @@
-# Waleed — Portfolio (GitHub Pages)
+# Nasrulla Waleed — Portfolio (GitHub Pages)
 
-Portfolio 5 pages (HTML/CSS/JS) :
+Portfolio HTML/CSS/JS prêt à publier sur GitHub Pages.
+
+## Pages
 - Accueil : `index.html`
-- Waleed : `waleed.html`
+- Profil : `waleed.html`
 - Projets : `projects.html`
 - Documents : `documents.html`
 - Contact : `contact.html`
-
-## Déploiement (GitHub Pages)
-1. Repo → **Settings**
-2. **Pages**
-3. Source : **Deploy from a branch**
-4. Branch : **main**
-5. Folder : **/(root)**
 
 ## Fichiers importants
 - Styles : `assets/css/main.css`
 - Scripts : `assets/js/main.js`
 - CV : `assets/docs/CV-Waleed.pdf`
 
+## Mise en ligne sur GitHub Pages
+1. Ouvrir le dépôt GitHub
+2. Aller dans **Settings**
+3. Ouvrir **Pages**
+4. Choisir **Deploy from a branch**
+5. Sélectionner la branche **main** et le dossier **/(root)**
+6. Enregistrer puis pousser les fichiers mis à jour
+
 ## Mise à jour
-Remplace simplement les fichiers modifiés dans le repo, puis **Commit**.
+Remplacer les fichiers modifiés dans le repo puis faire un commit.
