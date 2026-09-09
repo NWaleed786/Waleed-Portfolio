@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0b12"/>
+      <stop offset="1" stop-color="#17172a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="20%" r="70%">
+      <stop offset="0" stop-color="#a855f7" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5f3ff"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="22" stdDeviation="18" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="1000" fill="url(#bg)"/>
+  <rect width="1400" height="1000" fill="url(#glow)"/>
+
+  <g opacity="0.85">
+    <rect x="120" y="120" width="220" height="120" rx="22" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+    <rect x="1050" y="160" width="250" height="140" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+    <rect x="980" y="760" width="280" height="120" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="180" y="720" width="1040" height="150" rx="34" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+  </g>
+
+  <g transform="translate(760,210)" filter="url(#shadow)">
+    <rect x="-250" y="70" width="520" height="360" rx="34" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="-210" y="115" width="440" height="255" rx="22" fill="url(#screen)"/>
+    <rect x="-45" y="450" width="180" height="28" rx="14" fill="rgba(255,255,255,0.08)"/>
+    <rect x="-5" y="478" width="100" height="78" rx="26" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <path d="M-170 180 L-40 180" stroke="rgba(20,10,46,0.28)" stroke-width="16" stroke-linecap="round"/>
+    <path d="M-170 225 L120 225" stroke="rgba(20,10,46,0.20)" stroke-width="16" stroke-linecap="round"/>
+    <path d="M-170 270 L70 270" stroke="rgba(20,10,46,0.16)" stroke-width="16" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(260,250)" filter="url(#shadow)">
+    <ellipse cx="260" cy="600" rx="260" ry="90" fill="rgba(0,0,0,0.30)"/>
+    <circle cx="260" cy="220" r="78" fill="#f0d8c8"/>
+    <path d="M165 300 C170 260 210 230 260 230 C310 230 350 260 355 300 C310 275 290 268 260 268 C230 268 210 275 165 300 Z"
+          fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)"/>
+    <path d="M170 310 C120 360 110 430 130 510 C150 590 210 640 260 640 C320 640 380 592 395 510 C410 430 400 360 350 310 C315 350 295 360 260 360 C225 360 205 350 170 310 Z"
+          fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+    <circle cx="234" cy="215" r="7" fill="rgba(20,10,46,0.40)"/>
+    <circle cx="286" cy="215" r="7" fill="rgba(20,10,46,0.40)"/>
+    <path d="M230 245 C242 260 252 268 260 268 C268 268 278 260 290 245" fill="none" stroke="rgba(20,10,46,0.32)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M120 430 C85 450 78 500 96 540" stroke="rgba(255,255,255,0.12)" stroke-width="44" stroke-linecap="round"/>
+    <path d="M400 430 C435 450 442 500 424 540" stroke="rgba(255,255,255,0.12)" stroke-width="44" stroke-linecap="round"/>
+  </g>
+
+  <g fill="#fff" opacity="0.55">
+    <circle cx="1160" cy="110" r="3"/>
+    <circle cx="1230" cy="210" r="2.5"/>
+    <circle cx="1100" cy="260" r="2.2"/>
+    <circle cx="980" cy="150" r="2.8"/>
+    <circle cx="1040" cy="320" r="2.1"/>
+  </g>
+</svg>
