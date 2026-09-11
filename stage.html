@@ -19,6 +19,7 @@
       <a href="profil.html" class="active">Profil</a>
       <a href="projects.html">Projets</a>
       <a href="documents.html">Documents</a>
+      <a href="veille.html">Veille</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
@@ -41,7 +42,7 @@
         <div class="timeline-item">
           <div><span class="timeline-date">2024 - 2025</span></div>
           <div>
-            <h3 class="h3">Stages Pratiques (8 semaines)</h3>
+            <div class="stage-title-row"><h3 class="h3">Stages Pratiques (8 semaines)</h3><button class="document-button stage-document-button" type="button" data-preview-open="habibaphone-report" aria-label="Lire le compte rendu du stage Habibaphone">📄</button></div>
             <p class="edu-place muted">Habibaphone — Grigny (91)</p>
             <ul class="clean-list">
               <li>Montage et assemblage de PC</li>
@@ -54,7 +55,7 @@
         <div class="timeline-item">
           <div><span class="timeline-date">Février 2023</span></div>
           <div>
-            <h3 class="h3">Stage Pratique (2 semaines)</h3>
+            <div class="stage-title-row"><h3 class="h3">Stage Pratique (2 semaines)</h3><button class="document-button stage-document-button" type="button" data-preview-open="phone-repair-report" aria-label="Lire le compte rendu du stage Phone Repair">📄</button></div>
             <p class="edu-place muted">Phone Repair — Grigny (91)</p>
             <ul class="clean-list">
               <li>Réparation de téléphones smartphones</li>
@@ -66,7 +67,7 @@
         <div class="timeline-item">
           <div><span class="timeline-date">Avril 2022</span></div>
           <div>
-            <h3 class="h3">Stage d'observation (1 semaine)</h3>
+            <div class="stage-title-row"><h3 class="h3">Stage d'observation (1 semaine)</h3><button class="document-button stage-document-button" type="button" data-preview-open="mipop-report" aria-label="Lire le compte rendu du stage Mipop">📄</button></div>
             <p class="edu-place muted">Mipop — Grigny (91)</p>
             <ul class="clean-list">
               <li>Participation à des activités éducatives</li>
@@ -76,8 +77,50 @@
         </div>
       </div>
     </div>
+
   </section>
 </main>
+
+<dialog class="preview-dialog stage-report-dialog" id="habibaphone-report" aria-labelledby="habibaphone-report-title">
+  <div class="preview-dialog-head"><h2 id="habibaphone-report-title">Compte rendu — Habibaphone</h2><button type="button" data-preview-close aria-label="Fermer le compte rendu">×</button></div>
+  <div class="stage-report-content">
+    <h3>Contexte</h3>
+    <p>J’ai réalisé un stage pratique de huit semaines chez Habibaphone, à Grigny. Cette expérience m’a permis de découvrir le fonctionnement quotidien d’un atelier spécialisé dans le matériel informatique et la téléphonie.</p>
+    <h3>Missions réalisées</h3>
+    <p>J’ai participé au montage et à l’assemblage de plusieurs ordinateurs. J’ai appris à identifier les composants, à les installer correctement et à vérifier le démarrage et le fonctionnement général d’une machine.</p>
+    <p>J’ai également observé et réalisé des opérations de maintenance sur des téléphones. Ces interventions demandaient de la précision, de la patience et une bonne organisation afin d’éviter d’endommager les composants.</p>
+    <h3>Compétences développées</h3>
+    <p>Ce stage m’a permis de progresser dans le diagnostic des pannes matérielles et logicielles. J’ai appris à analyser les symptômes, à rechercher l’origine d’un problème et à suivre une méthode avant de proposer une réparation.</p>
+    <p class="report-conclusion">Cette expérience a renforcé mon autonomie et mon intérêt pour la maintenance informatique. Elle m’a aussi appris à travailler avec méthode et à vérifier chaque étape avant de remettre un équipement en service.</p>
+  </div>
+</dialog>
+
+<dialog class="preview-dialog stage-report-dialog" id="phone-repair-report" aria-labelledby="phone-repair-report-title">
+  <div class="preview-dialog-head"><h2 id="phone-repair-report-title">Compte rendu — Phone Repair</h2><button type="button" data-preview-close aria-label="Fermer le compte rendu">×</button></div>
+  <div class="stage-report-content">
+    <h3>Contexte</h3>
+    <p>En février 2023, j’ai effectué un stage pratique de deux semaines chez Phone Repair, à Grigny. Cette immersion était centrée sur la réparation de smartphones et sur l’accueil des clients.</p>
+    <h3>Activités observées et réalisées</h3>
+    <p>J’ai découvert les principales étapes d’une réparation de téléphone : réception de l’appareil, identification du problème, préparation de l’intervention et vérification du fonctionnement après réparation.</p>
+    <p>J’ai également observé les bonnes pratiques nécessaires pour manipuler les smartphones avec précaution. La précision des gestes et l’organisation du poste de travail sont essentielles pour travailler efficacement.</p>
+    <h3>Relation client</h3>
+    <p>Le contact avec les clients m’a permis de mieux comprendre l’importance de l’écoute et de la reformulation. Il faut être capable d’expliquer simplement le problème rencontré, les réparations possibles et les délais prévus.</p>
+    <p class="report-conclusion">Ce stage m’a apporté une première expérience concrète de la réparation mobile et m’a aidé à améliorer ma communication, mon sérieux et mon sens du service.</p>
+  </div>
+</dialog>
+
+<dialog class="preview-dialog stage-report-dialog" id="mipop-report" aria-labelledby="mipop-report-title">
+  <div class="preview-dialog-head"><h2 id="mipop-report-title">Compte rendu — Mipop</h2><button type="button" data-preview-close aria-label="Fermer le compte rendu">×</button></div>
+  <div class="stage-report-content">
+    <h3>Découverte de la structure</h3>
+    <p>En avril 2022, j’ai réalisé un stage d’observation d’une semaine au sein de l’association Mipop, à Grigny. Cette expérience m’a permis de découvrir l’organisation d’une structure associative et son fonctionnement au quotidien.</p>
+    <h3>Participation aux activités</h3>
+    <p>J’ai observé la préparation et le déroulement des activités éducatives. J’ai également découvert l’importance de l’organisation, de la communication et de l’adaptation aux besoins des personnes accueillies.</p>
+    <h3>Bilan</h3>
+    <p>Ce stage m’a permis de mieux comprendre le travail réalisé dans une association et la place de chaque intervenant dans un projet collectif.</p>
+    <p class="report-conclusion">Cette première expérience professionnelle m’a aidé à développer mon sens de l’observation et mon intérêt pour le travail en équipe dans un environnement différent du domaine technique.</p>
+  </div>
+</dialog>
 
 <footer class="footer">
   © <span data-year></span> Waleed

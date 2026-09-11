@@ -19,6 +19,7 @@
       <a href="profil.html">Profil</a>
       <a href="projects.html" class="active">Projets</a>
       <a href="documents.html">Documents</a>
+      <a href="veille.html">Veille</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
@@ -29,39 +30,76 @@
     <div class="section-head">
       <div>
         <div class="kicker">Réalisations</div>
-        <h1 class="h2">Projet principal</h1>
+        <h1 class="h2">Mes projets</h1>
       </div>
-      <p class="muted section-note">Un projet simple et propre, présenté de manière professionnelle.</p>
+      <p class="muted section-note">Deux réalisations web qui montrent mon travail en PHP, API et base de données.</p>
     </div>
 
-    <div class="project-layout">
-      <article class="card pad project-main">
-        <div class="project-tag">PHP / MySQL</div>
-        <h2 class="project-title">Gestion des salariés</h2>
-        <p class="muted">Application de gestion réalisée pour manipuler une base de données d’employés avec une interface simple. Le projet permet d’ajouter, modifier, afficher et supprimer des salariés, tout en appliquant les bases du développement web dynamique.</p>
+    <div class="project-grid">
+      <article class="card pad project-card">
+        <button class="preview-zoom" type="button" data-preview-open="movie-preview" aria-label="Voir le rendu MovieDB">🔍</button>
+        <div class="project-tag">Projet 1 · PHP / API</div>
+        <h2 class="project-title">MovieDB</h2>
+        <p class="muted">Application web consacrée aux films, séries et acteurs. Elle interroge l’API TMDB pour afficher les contenus populaires, les mieux notés, les sorties à venir et permettre des recherches par titre, genre, région ou acteur.</p>
 
         <div class="project-meta">
-          <div><span>Objectif</span><strong>Mettre en pratique PHP et MySQL</strong></div>
-          <div><span>Fonctions</span><strong>Ajout, modification, suppression, affichage</strong></div>
-          <div><span>Outils</span><strong>XAMPP, phpMyAdmin, VS Code</strong></div>
+          <div><span>Technologies</span><strong>PHP 8+, HTML, CSS, API TMDB, cURL</strong></div>
+          <div><span>Environnement Linux</span><strong>Ubuntu / Debian, PHP et php-curl</strong></div>
+          <div><span>Serveur</span><strong>Apache ou serveur PHP intégré</strong></div>
+        </div>
+
+        <div class="project-highlights">
+          <h3>Fonctionnalités réalisées</h3>
+          <ul class="clean-list">
+            <li>Connexion à une API externe</li>
+            <li>Pages de recherche et de découverte</li>
+            <li>Affichage dynamique des résultats</li>
+          </ul>
         </div>
 
         <div class="btn-row">
-          <a class="btn primary" href="projets/projet-01.zip" download>Télécharger le projet</a>
+          <a class="btn primary" href="projets/Projet1-MovieDB/Projet1-MovieDB.zip" download>Télécharger le projet</a>
         </div>
       </article>
 
-      <aside class="card pad project-side">
-        <h3>Résumé</h3>
-        <ul class="clean-list">
-          <li>Projet orienté base de données</li>
-          <li>Structure PHP claire et fonctionnelle</li>
-          <li>Bonne base pour présenter des compétences techniques</li>
-        </ul>
-      </aside>
+      <article class="card pad project-card">
+        <button class="preview-zoom" type="button" data-preview-open="chambord-preview" aria-label="Voir le rendu Chambord">🔍</button>
+        <div class="project-tag">Projet 2 · PHP / MySQL</div>
+        <h2 class="project-title">Gestion des salariés de Chambord</h2>
+        <p class="muted">Application de gestion des salariés avec une base de données et une interface d’administration. Elle permet de consulter, ajouter, modifier et supprimer des salariés, avec des statistiques par salaire et par service.</p>
+
+        <div class="project-meta">
+          <div><span>Technologies</span><strong>PHP 8+, HTML, CSS, MySQL / MariaDB</strong></div>
+          <div><span>Environnement Linux</span><strong>Ubuntu / Debian, Apache et MariaDB</strong></div>
+          <div><span>Serveur</span><strong>Apache ou serveur PHP intégré</strong></div>
+        </div>
+
+        <div class="project-highlights">
+          <h3>Fonctionnalités réalisées</h3>
+          <ul class="clean-list">
+            <li>Gestion complète des salariés</li>
+            <li>Connexion à une base MySQL/MariaDB</li>
+            <li>Import des données avec un fichier SQL</li>
+          </ul>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn primary" href="projets/Projet2-ChambordSalaries/Projet2-ChambordSalaries.zip" download>Télécharger le projet</a>
+        </div>
+      </article>
     </div>
   </section>
 </main>
+
+<dialog class="preview-dialog" id="movie-preview" aria-labelledby="movie-preview-title">
+  <div class="preview-dialog-head"><h2 id="movie-preview-title">Aperçu MovieDB</h2><button type="button" data-preview-close aria-label="Fermer l’aperçu">×</button></div>
+  <div class="project-preview preview-large"><img class="preview-image" src="assets/img/projet1-moviedb.png" alt="Capture agrandie du projet MovieDB"></div>
+</dialog>
+
+<dialog class="preview-dialog" id="chambord-preview" aria-labelledby="chambord-preview-title">
+  <div class="preview-dialog-head"><h2 id="chambord-preview-title">Aperçu Chambord</h2><button type="button" data-preview-close aria-label="Fermer l’aperçu">×</button></div>
+  <div class="project-preview preview-large"><img class="preview-image" src="assets/img/projet2-chambord.png" alt="Capture agrandie du projet Chambord"></div>
+</dialog>
 
 <footer class="footer">
   © <span data-year></span> Waleed

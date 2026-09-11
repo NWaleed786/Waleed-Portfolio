@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="Veille technologique de Waleed sur l'intelligence artificielle.">
+<title>Veille technologique | Waleed</title>
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="header">
+  <div class="nav-wrap">
+    <div class="brand">Waleed</div>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Menu">☰</button>
+    <nav class="nav" data-nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="profil.html">Profil</a>
+      <a href="projects.html">Projets</a>
+      <a href="documents.html">Documents</a>
+      <a href="veille.html" class="active">Veille</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <section class="section veille-page">
+    <div class="veille-hero card pad">
+      <div>
+        <div class="kicker">BTS SIO · Recherche continue</div>
+        <h1 class="h1">Veille technologique</h1>
+        <p class="muted">Les grandes nouveautés technologiques.</p>
+      </div>
+      <div class="veille-hero-mark"><span></span><b>TECH</b><small>LIVE</small></div>
+    </div>
+
+    <div class="veille-dashboard card pad" data-live-news>
+      <div class="veille-dashboard-head">
+        <div>
+          <div class="kicker">Flux en direct · français</div>
+          <h2 class="h2">Les nouveautés technologiques</h2>
+          <p class="muted">Les dernières informations et innovations du secteur technologique.</p>
+        </div>
+        <div class="veille-update"><span class="status-dot"></span><span data-news-status>Chargement...</span></div>
+      </div>
+      <div class="veille-toolbar">
+        <label for="news-date">Afficher depuis le</label>
+        <input id="news-date" type="date" data-news-date>
+        <button class="btn primary" type="button" data-news-refresh>Actualiser le flux</button>
+      </div>
+      <div class="veille-live-list" data-news-list></div>
+    </div>
+
+    <div class="veille-grid veille-selection">
+      <article class="card pad veille-card">
+        <div class="veille-card-top"><span class="project-tag">01 · 01/09/2025</span><span class="veille-type">IA / NLP</span></div>
+        <h2 class="project-title">Lancement de GPT-5</h2>
+        <p class="muted">OpenAI annonce une nouvelle génération de modèle de langage destinée à améliorer la compréhension, le raisonnement et la production de contenu.</p>
+        <div class="veille-tags"><span>OpenAI</span><span>ChatGPT</span><span>NLP</span></div>
+        <a class="btn primary veille-link" href="https://openai.com/fr-FR/index/introducing-gpt-5/" target="_blank" rel="noopener">Lire la source ↗</a>
+      </article>
+
+      <article class="card pad veille-card">
+        <div class="veille-card-top"><span class="project-tag">02 · 27/08/2025</span><span class="veille-type">Image</span></div>
+        <h2 class="project-title">Nano Banana de Google</h2>
+        <p class="muted">Google intègre dans Gemini un modèle de retouche et de génération d’images, avec des modifications guidées par des instructions en langage naturel.</p>
+        <div class="veille-tags"><span>Google</span><span>Gemini</span><span>Image</span></div>
+        <a class="btn primary veille-link" href="https://www.usine-digitale.fr/article/nano-banana-le-modele-de-retouche-d-images-signe-google-qui-fait-fureur.N2236638" target="_blank" rel="noopener">Lire la source ↗</a>
+      </article>
+
+      <article class="card pad veille-card">
+        <div class="veille-card-top"><span class="project-tag">03 · 04/07/2025</span><span class="veille-type">Vidéo</span></div>
+        <h2 class="project-title">Veo 3 arrive en France</h2>
+        <p class="muted">Le modèle de génération vidéo de Google devient accessible aux abonnés français de Google AI depuis l’application Gemini.</p>
+        <div class="veille-tags"><span>Google</span><span>Veo</span><span>Vidéo</span></div>
+        <a class="btn primary veille-link" href="https://www.usine-digitale.fr/article/veo-3-le-modele-de-generation-video-bluffant-de-google-arrive-en-france.N2234675" target="_blank" rel="noopener">Lire la source ↗</a>
+      </article>
+
+      <article class="card pad veille-card">
+        <div class="veille-card-top"><span class="project-tag">04 · 11/07/2025</span><span class="veille-type">Audio / Vidéo</span></div>
+        <h2 class="project-title">Flow et la synthèse vocale</h2>
+        <p class="muted">Flow et Veo 3 évoluent avec la possibilité d’ajouter une voix générée à des clips créés à partir d’images importées.</p>
+        <div class="veille-tags"><span>Flow</span><span>Veo 3</span><span>Voix</span></div>
+        <a class="btn primary veille-link" href="https://www.usine-digitale.fr/article/google-etoffe-flow-avec-la-synthese-vocale-sur-veo-3.N2235139" target="_blank" rel="noopener">Lire la source ↗</a>
+      </article>
+
+      <article class="card pad veille-card">
+        <div class="veille-card-top"><span class="project-tag">05 · 19/05/2025</span><span class="veille-type">Innovation</span></div>
+        <h2 class="project-title">Choose France et l’IA</h2>
+        <p class="muted">Le sommet Choose France met en avant de nouveaux investissements dans l’intelligence artificielle et le développement de projets numériques.</p>
+        <div class="veille-tags"><span>Innovation</span><span>Investissement</span><span>France</span></div>
+        <a class="btn primary veille-link" href="https://www.france24.com/fr/info-en-continu/20250519-investissements-le-8e-sommet-choose-france-bat-un-record-et-concrétise-des-projets-dans-l-ia" target="_blank" rel="noopener">Lire la source ↗</a>
+      </article>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  © <span data-year></span> Waleed
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
