@@ -82,8 +82,8 @@ body > main {
 }
 
 @keyframes page-unfold {
-  from { opacity: 0; clip-path: inset(0 0 100% 0); transform: translateY(-12px) scaleY(0.96); }
-  to { opacity: 1; clip-path: inset(0); transform: translateY(0) scaleY(1); }
+  from { opacity: 0; transform: translateY(-18px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes background-loop {
@@ -241,11 +241,11 @@ a:hover {
 
 @media (min-width: 1200px) {
   .nav-wrap {
-    width: min(1180px, calc(100% - 5rem));
+    width: min(1080px, calc(100% - 6rem));
   }
 
   .container:not(.home-page) {
-    width: min(1180px, calc(100% - 5rem));
+    width: min(1080px, calc(100% - 6rem));
   }
 }
 
@@ -349,13 +349,17 @@ a:hover {
 @media (hover: hover) {
   .card:hover,
   .timeline-item:hover {
-    transform: translateY(-4px) scale(1.015);
+    transform: translateY(-3px);
     border-color: rgba(147, 197, 253, 0.36);
     box-shadow: 0 24px 68px rgba(0, 0, 0, 0.48);
   }
 
   .timeline-item:hover {
     background: rgba(59, 130, 246, 0.1);
+  }
+
+  .profile-intro:hover {
+    transform: translateY(-3px);
   }
 }
 
@@ -665,7 +669,7 @@ a:hover {
 .profile-stamp strong { color: #fff; font-size: 1.5rem; }
 .profile-actions { display: grid; gap: 1.5rem; }
 .profile-route { position: relative; display: flex; flex-direction: column; justify-content: center; min-height: 235px; overflow: hidden; transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease; }
-.profile-route:hover { color: var(--text); transform: translateY(-4px) scale(1.015); border-color: rgba(147, 197, 253, 0.42); background: linear-gradient(145deg, rgba(59, 130, 246, 0.16), rgba(21, 31, 57, 0.96)); }
+.profile-route:hover { color: var(--text); transform: translateY(-3px); border-color: rgba(147, 197, 253, 0.42); background: linear-gradient(145deg, rgba(59, 130, 246, 0.16), rgba(21, 31, 57, 0.96)); }
 .profile-route .h2 { margin: 0.35rem 0 0.55rem; }
 .profile-route p { max-width: 52ch; margin: 0; }
 .profile-route-index { position: absolute; top: 1.2rem; right: 1.5rem; color: rgba(147, 197, 253, 0.6); font-size: 1.05rem; font-weight: 900; }
@@ -675,7 +679,7 @@ a:hover {
 .contact-copy p { max-width: 35ch; margin: 0; font-size: 1.04rem; }
 .contact-methods { display: grid; gap: 1.1rem; }
 .contact-method { display: flex; flex-direction: column; justify-content: center; min-height: 180px; transition: transform 0.2s ease, border-color 0.2s ease; }
-.contact-method:hover { color: var(--text); transform: translateY(-4px) scale(1.015); border-color: rgba(147, 197, 253, 0.45); }
+.contact-method:hover { color: var(--text); transform: translateY(-3px); border-color: rgba(147, 197, 253, 0.45); }
 .contact-method:first-child { background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(16, 23, 42, 0.96)); }
 .contact-method:nth-child(2) { background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(16, 23, 42, 0.96)); }
 .contact-method-label { color: #bfdbfe; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
