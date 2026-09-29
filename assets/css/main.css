@@ -241,11 +241,11 @@ a:hover {
 
 @media (min-width: 1200px) {
   .nav-wrap {
-    width: min(1280px, calc(100% - 4rem));
+    width: min(1180px, calc(100% - 5rem));
   }
 
   .container:not(.home-page) {
-    width: min(1280px, calc(100% - 4rem));
+    width: min(1180px, calc(100% - 5rem));
   }
 }
 
@@ -262,10 +262,10 @@ a:hover {
   .contact-page .section,
   .education-page .section,
   .documents-page .section {
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 180px);
     display: grid;
     align-items: center;
-    padding-block: 4rem;
+    padding-block: 2.5rem;
   }
 
   .profile-page .profile-grid-2 > .card {
@@ -275,8 +275,20 @@ a:hover {
     justify-content: center;
   }
 
+  .profile-intro {
+    min-height: 420px;
+  }
+
+  .profile-route {
+    min-height: 200px;
+  }
+
+  .contact-method {
+    min-height: 150px;
+  }
+
   .education-page .card {
-    min-height: 570px;
+    min-height: 520px;
     display: flex;
     align-items: center;
   }
@@ -290,7 +302,7 @@ a:hover {
   }
 
   .documents-page .project-layout > .card {
-    min-height: 360px;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
