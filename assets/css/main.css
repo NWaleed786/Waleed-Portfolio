@@ -415,12 +415,18 @@ a:hover {
   }
 
   .home-page .section {
-    padding: clamp(3rem, 7vh, 5.5rem) 0;
+    display: grid;
+    align-items: center;
+    box-sizing: border-box;
+    height: calc(100vh - 175px);
+    min-height: 0;
+    padding: clamp(1.5rem, 3vh, 2.5rem) 0;
   }
 
   .home-hero {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    min-height: calc(100vh - 312px);
+    min-height: 0;
+    height: 100%;
     gap: clamp(3rem, 5vw, 6rem);
   }
 
@@ -433,7 +439,7 @@ a:hover {
   }
 
   .home-visual {
-    min-height: 520px;
+    min-height: 0;
   }
 
   .home-visual::after {
