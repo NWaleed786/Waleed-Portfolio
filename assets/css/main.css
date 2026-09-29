@@ -251,6 +251,10 @@ a:hover {
   .container:not(.home-page) {
     width: min(720px, calc(100% - 7rem));
   }
+
+  .container.veille-main {
+    width: min(1037px, calc(100% - 7rem));
+  }
 }
 
 .section {
@@ -516,7 +520,7 @@ a:hover {
 .veille-live-item time { flex: 0 0 auto; color: var(--muted); font-size: 0.75rem; }
 
 .dlss-page { max-width: 1280px; }
-.veille-dlss-layout { display: grid; grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1.55fr); gap: 1.5rem; align-items: start; }
+.veille-dlss-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: stretch; }
 .veille-dashboard-compact { margin: 0; }
 .veille-dashboard-compact .veille-dashboard-head { align-items: flex-start; }
 .veille-dashboard-compact .veille-dashboard-head .h2 { margin-bottom: 0; font-size: 1.55rem; }
