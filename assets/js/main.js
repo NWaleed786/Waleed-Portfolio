@@ -129,7 +129,7 @@
         const stories = feeds.flatMap(feed => feed.items || []).filter(story => {
           const publicationDate = new Date(story.pubDate).toLocaleDateString('en-CA', { timeZone: 'Europe/Paris' });
           return story.title && story.link && publicationDate >= selectedDate;
-        }).sort((first, second) => new Date(second.pubDate) - new Date(first.pubDate)).filter((story, index, allStories) => allStories.findIndex(item => item.link === story.link) === index).slice(0, 12);
+        }).sort((first, second) => new Date(second.pubDate) - new Date(first.pubDate)).filter((story, index, allStories) => allStories.findIndex(item => item.link === story.link) === index).slice(0, Number(newsPanel.dataset.newsLimit || 12));
         if(!stories.length){
           status.textContent = 'Aucune nouveauté trouvée depuis cette date.';
           return;

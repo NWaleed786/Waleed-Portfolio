@@ -1,0 +1,16 @@
+HABIBAPHONE — Site et rapport de stage
+
+Ouvrir le site : double-cliquer sur site/index.html.
+Pages : Accueil, Devis, Vente, Contact.
+
+Modifier la page Vente : ouvrir site/vente.html dans Visual Studio Code. Copier un bloc
+<article class="product-card"> ... </article>, puis modifier le nom et la description.
+Les catégories présentes sont des exemples à adapter à l'inventaire réel.
+Aucun achat ni paiement ne se fait sur le site.
+
+Devis : le formulaire affiche un récapitulatif et ouvre un brouillon Gmail pour
+HabibaPhone12@gmail.com. Le visiteur doit vérifier puis cliquer sur « Envoyer »
+dans Gmail ; le site ne peut pas envoyer l'e-mail automatiquement.
+
+Le rapport de stage est fourni dans rapport/ aux formats Word et PDF.
+La capture disponible de l'accueil est dans captures/ et intégrée au rapport.

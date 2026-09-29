@@ -25,15 +25,16 @@
   </div>
 </header>
 
-<main id="main" class="container">
+<main id="main" class="container documents-page">
   <section class="section">
     <div class="project-layout">
-      <div class="card pad">
+      <div class="card pad document-cv-card">
+        <button class="preview-zoom document-preview-zoom" type="button" data-preview-open="cv-preview" aria-label="Afficher le CV" title="Afficher le CV">🔍</button>
         <div class="kicker">Document</div>
         <h1 class="h2">Curriculum Vitae</h1>
         <p class="muted">Téléchargement direct du CV au format PDF.</p>
         <div class="btn-row">
-          <a class="btn primary" href="assets/docs/CV_Nasrulla_Waleed.pdf" target="_blank" rel="noopener">Ouvrir le CV</a>
+          <a class="btn primary" href="assets/docs/Nasrulla_Waleed_CV.pdf" target="_blank" rel="noopener">Ouvrir le CV</a>
         </div>
       </div>
       <div class="card pad hero-panel">
@@ -43,6 +44,14 @@
     </div>
   </section>
 </main>
+
+<dialog class="preview-dialog stage-report-dialog stage-pdf-dialog" id="cv-preview" aria-labelledby="cv-preview-title">
+  <div class="preview-dialog-head">
+    <h2 id="cv-preview-title">Curriculum Vitae</h2>
+    <button type="button" data-preview-close aria-label="Fermer le CV">×</button>
+  </div>
+  <div class="stage-pdf-preview"><iframe src="assets/docs/Nasrulla_Waleed_CV.pdf" title="Curriculum Vitae de Nasrulla Waleed"></iframe></div>
+</dialog>
 
 <footer class="footer">
   © <span data-year></span> Waleed

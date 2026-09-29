@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devis — HABIBAPHONE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">HABIBA<span>PHONE</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a class="active" aria-current="page" href="devis.html">Devis</a>
+      <a href="vente.html">Vente</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="page">
+    <div class="page-title"><p class="kicker">DEMANDE DE DEVIS</p><h1>Parlez-nous de votre téléphone.</h1><p>Quelques informations suffisent pour préparer votre demande.</p></div>
+    <form id="quote-form" class="form-card">
+      <div class="form-grid">
+        <label>Nom <input name="nom" autocomplete="name" required></label>
+        <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
+        <label>Téléphone <input name="telephone" type="tel" autocomplete="tel" required></label>
+        <label>Marque et modèle <input name="modele" placeholder="Ex. iPhone 13" required></label>
+      </div>
+      <label>Problème
+        <select name="probleme" required>
+          <option value="">Choisir</option><option>Écran cassé</option><option>Batterie</option>
+          <option>Connecteur de charge</option><option>Autre problème</option>
+        </select>
+      </label>
+      <label>Précisions <textarea name="details" rows="4" placeholder="Décrivez la panne en quelques mots" required></textarea></label>
+      <button class="button" type="submit">Voir le récapitulatif et ouvrir Gmail</button>
+      <p class="small-note">Gmail ouvrira un message à destination de la boutique. Vérifiez-le, puis cliquez sur « Envoyer ». Le prix sera confirmé après examen de l’appareil.</p>
+    </form>
+    <section id="result" class="result" hidden aria-live="polite">
+      <h2>Récapitulatif de votre demande</h2><pre id="summary"></pre>
+      <div class="actions">
+        <a class="button" id="email-link" href="https://mail.google.com/" target="_blank" rel="noopener">Ouvrir le message dans Gmail</a>
+        <button class="button secondary" id="copy" type="button">Copier</button>
+        <button class="button secondary" id="print" type="button">Imprimer</button>
+      </div>
+      <p id="copy-status" role="status"></p>
+    </section>
+  </main>
+  <footer>© HABIBAPHONE · Grigny</footer>
+  <script src="script.js"></script>
+</body>
+</html>

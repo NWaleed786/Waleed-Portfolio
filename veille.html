@@ -26,72 +26,79 @@
 </header>
 
 <main id="main" class="container">
-  <section class="section veille-page">
-    <div class="veille-hero card pad">
-      <div>
-        <div class="kicker">BTS SIO · Recherche continue</div>
-        <h1 class="h1">Veille technologique</h1>
-        <p class="muted">Les grandes nouveautés technologiques.</p>
-      </div>
-      <div class="veille-hero-mark"><span></span><b>TECH</b><small>LIVE</small></div>
-    </div>
-
-    <div class="veille-dashboard card pad" data-live-news>
-      <div class="veille-dashboard-head">
-        <div>
-          <div class="kicker">Flux en direct · français</div>
-          <h2 class="h2">Les nouveautés technologiques</h2>
-          <p class="muted">Les dernières informations et innovations du secteur technologique.</p>
+  <section class="section veille-page dlss-page">
+    <div class="veille-dlss-layout">
+      <aside class="card pad veille-dashboard veille-dashboard-compact" data-live-news data-news-limit="5">
+        <div class="veille-dashboard-head">
+          <div>
+            <div class="kicker">Flux en direct</div>
+            <h2 class="h2">Actualités tech</h2>
+          </div>
+          <div class="veille-update"><span class="status-dot"></span><span data-news-status>Chargement...</span></div>
         </div>
-        <div class="veille-update"><span class="status-dot"></span><span data-news-status>Chargement...</span></div>
-      </div>
-      <div class="veille-toolbar">
-        <label for="news-date">Afficher depuis le</label>
-        <input id="news-date" type="date" data-news-date>
-        <button class="btn primary" type="button" data-news-refresh>Actualiser le flux</button>
-      </div>
-      <div class="veille-live-list" data-news-list></div>
+        <div class="veille-toolbar">
+          <label for="news-date">Depuis le</label>
+          <input id="news-date" type="date" data-news-date>
+          <button class="btn primary" type="button" data-news-refresh>Actualiser</button>
+        </div>
+        <div class="veille-live-list" data-news-list></div>
+      </aside>
+
+      <article class="card pad dlss-report">
+        <div class="kicker">Veille technologique · GPU & IA</div>
+        <h1 class="h1">DLSS 5 : le rendu neuronal guidé en 3D</h1>
+        <p class="dlss-lead">La nouvelle évolution de DLSS vise à rendre les jeux plus réalistes en utilisant l'IA pour guider l'éclairage et les matériaux d'une scène en trois dimensions.</p>
+
+        <div class="dlss-facts">
+          <div><span>Éditeur</span><strong>NVIDIA</strong></div>
+          <div><span>Technologie</span><strong>3D-Guided Neural Rendering</strong></div>
+          <div><span>Matériel ciblé</span><strong>GeForce RTX série 50</strong></div>
+        </div>
+
+        <div class="dlss-sections">
+          <section>
+            <h2>Ce qui change</h2>
+            <p class="muted">DLSS 5 ne se limite plus à reconstruire l'image ou à générer des images intermédiaires. Son nouveau modèle de rendu neuronal exploite des informations de scène afin d'améliorer la perception des matières, des reflets et de la lumière.</p>
+          </section>
+          <section>
+            <h2>Comment cela fonctionne</h2>
+            <p class="muted">Les développeurs règlent le modèle selon leur direction artistique. L'IA intervient alors dans le rendu final, en complément des techniques déjà présentes dans DLSS : Super Resolution, Frame Generation et Ray Reconstruction.</p>
+          </section>
+          <section>
+            <h2>Pourquoi c'est important</h2>
+            <p class="muted">Cette approche rapproche le rendu temps réel des méthodes de production assistées par IA. Elle peut améliorer le réalisme sans demander aux studios de créer autant de détails manuellement pour chaque surface.</p>
+          </section>
+          <section>
+            <h2>Point de vigilance</h2>
+            <p class="muted">Le bénéfice dépendra du réglage effectué par chaque studio, de la compatibilité des jeux et du matériel RTX utilisé. Il faudra comparer les résultats en mouvement, la qualité d'image et la réactivité, pas seulement le nombre d'images par seconde.</p>
+          </section>
+        </div>
+
+        <div class="dlss-source">
+          <span>Source principale</span>
+          <a href="https://www.nvidia.com/fr-fr/geforce/technologies/dlss/" target="_blank" rel="noopener">NVIDIA GeForce - DLSS 5 et 3D-Guided Neural Rendering ↗</a>
+        </div>
+      </article>
     </div>
 
-    <div class="veille-grid veille-selection">
-      <article class="card pad veille-card">
-        <div class="veille-card-top"><span class="project-tag">01 · 01/09/2025</span><span class="veille-type">IA / NLP</span></div>
-        <h2 class="project-title">Lancement de GPT-5</h2>
-        <p class="muted">OpenAI annonce une nouvelle génération de modèle de langage destinée à améliorer la compréhension, le raisonnement et la production de contenu.</p>
-        <div class="veille-tags"><span>OpenAI</span><span>ChatGPT</span><span>NLP</span></div>
-        <a class="btn primary veille-link" href="https://openai.com/fr-FR/index/introducing-gpt-5/" target="_blank" rel="noopener">Lire la source ↗</a>
+    <div class="veille-technology-grid" aria-label="Autres technologies à suivre">
+      <article class="card pad technology-card">
+        <div class="kicker">Rendu IA</div>
+        <h2>AMD FSR 4</h2>
+        <p class="muted">La nouvelle génération de FidelityFX Super Resolution utilise l'IA pour améliorer la qualité d'image et les performances dans les jeux compatibles.</p>
+        <a href="https://www.amd.com/en/products/graphics/technologies/fidelityfx/super-resolution.html" target="_blank" rel="noopener">Lire plus ↗</a>
       </article>
-
-      <article class="card pad veille-card">
-        <div class="veille-card-top"><span class="project-tag">02 · 27/08/2025</span><span class="veille-type">Image</span></div>
-        <h2 class="project-title">Nano Banana de Google</h2>
-        <p class="muted">Google intègre dans Gemini un modèle de retouche et de génération d’images, avec des modifications guidées par des instructions en langage naturel.</p>
-        <div class="veille-tags"><span>Google</span><span>Gemini</span><span>Image</span></div>
-        <a class="btn primary veille-link" href="https://www.usine-digitale.fr/article/nano-banana-le-modele-de-retouche-d-images-signe-google-qui-fait-fureur.N2236638" target="_blank" rel="noopener">Lire la source ↗</a>
+      <article class="card pad technology-card">
+        <div class="kicker">Connectivité</div>
+        <h2>Wi-Fi 7</h2>
+        <p class="muted">Cette évolution du Wi-Fi vise des débits plus élevés, une latence réduite et une meilleure stabilité pour les usages intensifs à domicile comme en entreprise.</p>
+        <a href="https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7" target="_blank" rel="noopener">Lire plus ↗</a>
       </article>
-
-      <article class="card pad veille-card">
-        <div class="veille-card-top"><span class="project-tag">03 · 04/07/2025</span><span class="veille-type">Vidéo</span></div>
-        <h2 class="project-title">Veo 3 arrive en France</h2>
-        <p class="muted">Le modèle de génération vidéo de Google devient accessible aux abonnés français de Google AI depuis l’application Gemini.</p>
-        <div class="veille-tags"><span>Google</span><span>Veo</span><span>Vidéo</span></div>
-        <a class="btn primary veille-link" href="https://www.usine-digitale.fr/article/veo-3-le-modele-de-generation-video-bluffant-de-google-arrive-en-france.N2234675" target="_blank" rel="noopener">Lire la source ↗</a>
-      </article>
-
-      <article class="card pad veille-card">
-        <div class="veille-card-top"><span class="project-tag">04 · 11/07/2025</span><span class="veille-type">Audio / Vidéo</span></div>
-        <h2 class="project-title">Flow et la synthèse vocale</h2>
-        <p class="muted">Flow et Veo 3 évoluent avec la possibilité d’ajouter une voix générée à des clips créés à partir d’images importées.</p>
-        <div class="veille-tags"><span>Flow</span><span>Veo 3</span><span>Voix</span></div>
-        <a class="btn primary veille-link" href="https://www.usine-digitale.fr/article/google-etoffe-flow-avec-la-synthese-vocale-sur-veo-3.N2235139" target="_blank" rel="noopener">Lire la source ↗</a>
-      </article>
-
-      <article class="card pad veille-card">
-        <div class="veille-card-top"><span class="project-tag">05 · 19/05/2025</span><span class="veille-type">Innovation</span></div>
-        <h2 class="project-title">Choose France et l’IA</h2>
-        <p class="muted">Le sommet Choose France met en avant de nouveaux investissements dans l’intelligence artificielle et le développement de projets numériques.</p>
-        <div class="veille-tags"><span>Innovation</span><span>Investissement</span><span>France</span></div>
-        <a class="btn primary veille-link" href="https://www.france24.com/fr/info-en-continu/20250519-investissements-le-8e-sommet-choose-france-bat-un-record-et-concrétise-des-projets-dans-l-ia" target="_blank" rel="noopener">Lire la source ↗</a>
+      <article class="card pad technology-card">
+        <div class="kicker">Intelligence artificielle</div>
+        <h2>NVIDIA ACE</h2>
+        <p class="muted">Une plateforme d'IA conçue pour créer des personnages numériques capables de dialoguer et de réagir plus naturellement dans les jeux et applications.</p>
+        <a href="https://www.nvidia.com/en-us/geforce/ai/" target="_blank" rel="noopener">Lire plus ↗</a>
       </article>
     </div>
 
