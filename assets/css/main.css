@@ -241,15 +241,15 @@ a:hover {
 
 @media (min-width: 1200px) {
   html {
-    font-size: 90%;
+    font-size: 80%;
   }
 
   .nav-wrap {
-    width: min(1000px, calc(100% - 7rem));
+    width: min(900px, calc(100% - 7rem));
   }
 
   .container:not(.home-page) {
-    width: min(1000px, calc(100% - 7rem));
+    width: min(900px, calc(100% - 7rem));
   }
 }
 
@@ -411,7 +411,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   .home-page {
-    width: min(1440px, calc(100% - 4rem));
+    width: min(1296px, calc(100% - 4rem));
   }
 
   .home-page .section {
